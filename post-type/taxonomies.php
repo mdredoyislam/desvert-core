@@ -1,0 +1,70 @@
+<?php
+add_action( 'init', function() {
+	register_taxonomy( 'project-category', array(
+	0 => 'projects',
+), array(
+	'labels' => array(
+		'name' => 'Project Categories',
+		'singular_name' => 'Project Category',
+		'menu_name' => 'Project Categories',
+		'all_items' => 'All Project Categories',
+		'edit_item' => 'Edit Project Category',
+		'view_item' => 'View Project Category',
+		'update_item' => 'Update Project Category',
+		'add_new_item' => 'Add New Project Category',
+		'new_item_name' => 'New Project Category Name',
+		'parent_item' => 'Parent Project Category',
+		'parent_item_colon' => 'Parent Project Category:',
+		'search_items' => 'Search Project Categories',
+		'not_found' => 'No project categories found',
+		'no_terms' => 'No project categories',
+		'filter_by_item' => 'Filter by project category',
+		'items_list_navigation' => 'Project Categories list navigation',
+		'items_list' => 'Project Categories list',
+		'back_to_items' => '← Go to project categories',
+		'item_link' => 'Project Category Link',
+		'item_link_description' => 'A link to a project category',
+	),
+	'public' => true,
+	'hierarchical' => true,
+	'show_in_menu' => true,
+	'show_in_rest' => true,
+	'show_tagcloud' => false,
+	'show_admin_column' => true,
+	'sort' => true,
+) );
+
+	register_taxonomy( 'project-tag', array(
+	0 => 'projects',
+), array(
+	'labels' => array(
+		'name' => 'Project Tags',
+		'singular_name' => 'Project Tag',
+		'menu_name' => 'Project Tags',
+		'all_items' => 'All Project Tags',
+		'edit_item' => 'Edit Project Tag',
+		'view_item' => 'View Project Tag',
+		'update_item' => 'Update Project Tag',
+		'add_new_item' => 'Add New Project Tag',
+		'new_item_name' => 'New Project Tag Name',
+		'search_items' => 'Search Project Tags',
+		'popular_items' => 'Popular Project Tags',
+		'separate_items_with_commas' => 'Separate project tags with commas',
+		'add_or_remove_items' => 'Add or remove project tags',
+		'choose_from_most_used' => 'Choose from the most used project tags',
+		'not_found' => 'No project tags found',
+		'no_terms' => 'No project tags',
+		'items_list_navigation' => 'Project Tags list navigation',
+		'items_list' => 'Project Tags list',
+		'back_to_items' => '← Go to project tags',
+		'item_link' => 'Project Tag Link',
+		'item_link_description' => 'A link to a project tag',
+	),
+	'public' => true,
+	'show_in_menu' => true,
+	'show_in_rest' => true,
+	'show_admin_column' => true,
+	'sort' => true,
+) );
+} );
+
